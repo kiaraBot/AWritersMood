@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">A Writer\'s Mood</string>
+    
+    <!-- ***** Navigation Drawer ***** -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">A Writer\'s Mood</string>
+    <string name="nav_header_subtitle">afieldprof@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    
+    <!-- *Menu Item Titles-->
+    <string name="menu_home">Home</string>
+    <string name="menu_newboard">Create New Board</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    
+    <!-- ***** 3 Dot Pop Up-->
+    <string name="action_settings">Settings</string>
+    
+    <!-- ***** Mood Board Layouts *****-->
+    <string name="tv_title">Title</string>
+    <string name="tv_swatch">Swatches</string>
+    <string name="tv_image">Image</string>
+    <string name="tv_text">Text</string>
+    
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ***** BaseApp Theme Color-->
+    <color name="colorPrimary">#4c5270</color>
+    <color name="colorPrimaryDark">#868b8e</color>
+    <color name="appBackground">#e7d2cc</color>
+    <color name="colorAccent">#BF4AB7</color>
+    <color name="frameBackground">#ffffff</color>
+    
+    <!-- ***** User Theme Choices ***** -->
+    <!-- Theme One -->
+    <color name="th1Base">#132E3F</color>
+    <color name="th1Blue">#394C59</color>
+    <color name="th1LightBlue">#CDEBF2</color>
+    <color name="th1Purple">#590153</color>
+    <color name="th1Pink">#BF4AB7</color>
+    
+    <!-- Theme Two -->
+    <color name="th2Base">#594727</color>
+    <color name="th2DrlGreyPurple">#3F301D</color>
+    <color name="th2LtGreyPink">#D8CBCB</color>
+    <color name="th2DrkBlue">#294359</color>
+    <color name="th2LtBlue">#688EA5</color>
+    
+    <!-- Theme Three -->
+    <color name="th3Base">#165946</color>
+    <color name="th3Mint">#79D87F</color>
+    <color name="th3LtMint">#9FD88F</color>
+    <color name="th3DrkPurple">#28243F</color>
+    <color name="th3LtBlue">#588C8C</color>
+</resources>
