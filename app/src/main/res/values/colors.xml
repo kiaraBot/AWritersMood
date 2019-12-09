@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- ***** BaseApp Theme Color-->
-    <color name="colorPrimary">#4c5270</color>
+    <color name="colorPrimary">#4C5270</color>
     <color name="colorPrimaryDark">#868b8e</color>
-    <color name="appBackground">#e7d2cc</color>
+    <color name="appBackground">#DBCED8</color>
     <color name="colorAccent">#BF4AB7</color>
     <color name="frameBackground">#ffffff</color>
+    <color name="flatBlack">#141414</color>
     
     <!-- ***** User Theme Choices ***** -->
     <!-- Theme One -->

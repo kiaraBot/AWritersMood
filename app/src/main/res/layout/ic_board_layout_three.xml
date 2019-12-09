@@ -1,156 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="382dp"
     android:layout_height="246dp"
-    android:layout_marginStart="5dp"
-    android:layout_marginEnd="5dp"
-    android:layout_marginTop="15dp"
-    android:background="@color/colorPrimaryDark"
+    android:layout_alignWithParentIfMissing="true"
     android:layout_gravity="center_horizontal"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginEnd="5dp"
+    android:background="@color/colorPrimaryDark"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintHorizontal_bias="0.5"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent" >
+    app:layout_constraintTop_toTopOf="parent">
     
     <FrameLayout
-        android:id="@+id/fl_top_right_one"
+        android:id="@+id/fl_bottom_right_tree"
         android:layout_width="160dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="10dp"
+        android:layout_height="52dp"
         android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:background="@color/frameBackground"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-    
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        
         <TextView
-            android:id="@+id/tv_swatches"
+            android:id="@+id/tv_swatches_tree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/tv_swatch"
-            android:textSize="25sp"/>
+            android:text="@string/tv_text"
+            android:textSize="25sp" />
     </FrameLayout>
     
     <FrameLayout
-        android:id="@+id/fl_top_left_one"
-        android:layout_width="188dp"
-        android:layout_height="35dp"
+        android:id="@+id/fl_title_tree"
+        android:layout_width="192dp"
+        android:layout_height="38dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:background="@color/frameBackground"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fl_bottom_right_tree"
+        app:layout_constraintStart_toStartOf="parent">
     
         <TextView
-            android:id="@+id/tv_title"
+            android:id="@+id/tv_title_tree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/tv_title"
-            android:textSize="25sp"/>
+            android:textSize="25sp" />
     </FrameLayout>
     
     <FrameLayout
-        android:id="@+id/fl_middle_left_one"
+        android:id="@+id/fl_middle_left_tree"
         android:layout_width="104dp"
         android:layout_height="96dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
         android:background="@color/frameBackground"
-        app:layout_constraintEnd_toStartOf="@+id/fl_middle_middle_one"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fl_top_left_one">
-    
+        app:layout_constraintTop_toBottomOf="@+id/fl_top_left_tree">
+        
         <TextView
-            android:id="@+id/tv_middle_left_one"
+            android:id="@+id/tv_middle_left_tree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/tv_image"
-            android:textSize="25sp"/>
+            android:textSize="25sp" />
     </FrameLayout>
     
     <FrameLayout
-        android:id="@+id/fl_middle_middle_one"
+        android:id="@+id/fl_middle_middle_two"
         android:layout_width="80dp"
         android:layout_height="96dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:background="@color/frameBackground"
-        app:layout_constraintStart_toEndOf="@+id/fl_middle_left_one"
-        app:layout_constraintTop_toBottomOf="@+id/fl_top_left_one">
+        app:layout_constraintStart_toEndOf="@+id/fl_middle_left_tree"
+        app:layout_constraintTop_toBottomOf="@+id/fl_top_right_tree">
     
         <TextView
-            android:id="@+id/tv_middle_middle_one"
+            android:id="@+id/tv_middle_middle_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/tv_text"
-            android:textSize="25sp"/>
+            android:textSize="25sp" />
     </FrameLayout>
     
     <FrameLayout
-        android:id="@+id/fl_middle_right_one"
+        android:id="@+id/fl_middle_right_two"
         android:layout_width="158dp"
         android:layout_height="81dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:background="@color/frameBackground"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fl_top_right_one">
-    
+        app:layout_constraintTop_toBottomOf="@+id/fl_top_right_tree">
+        
         <TextView
-            android:id="@+id/tv_middle_right_one"
+            android:id="@+id/tv_middle_right_two"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/tv_image"
-            android:textSize="25sp"/>
+            android:textSize="25sp" />
     </FrameLayout>
     
     <FrameLayout
-        android:id="@+id/fl_bottom_right_one"
+        android:id="@+id/fl_top_right_tree"
         android:layout_width="200dp"
         android:layout_height="72dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
         android:background="@color/frameBackground"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fl_middle_middle_one">
-    
+        app:layout_constraintTop_toTopOf="parent">
+        
         <TextView
-            android:id="@+id/tv_bottom_right_one"
+            android:id="@+id/tv_top_right_tree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/tv_image"
-            android:textSize="25sp"/>
+            android:textSize="25sp" />
     </FrameLayout>
     
     <FrameLayout
-        android:id="@+id/fl_bottom_left_one"
+        android:id="@+id/fl_top_left_tree"
         android:layout_width="150dp"
         android:layout_height="72dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
         android:background="@color/frameBackground"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fl_middle_left_one">
-    
+        app:layout_constraintTop_toTopOf="parent">
+        
         <TextView
-            android:id="@+id/tv_bottom_left_one"
+            android:id="@+id/tv_top_left_tree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/tv_text"
-            android:textSize="25sp"/>
+            android:textSize="25sp" />
     </FrameLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
