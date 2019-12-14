@@ -2,17 +2,53 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_newboard_fragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal"
-    android:background="@color/appBackground">
+    android:background="@color/appBackground"
+    tools:context=".ui.newboard.NewBoardFragment">
+    
+    
+    <ViewStub
+        android:id="@+id/vs_bl_one"
+        android:layout_width="382dp"
+        android:layout_height="246dp"
+        android:layout_marginTop="15dp"
+        android:inflatedId="@id/cl_newboard_fragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    
+    <ViewStub
+        android:id="@+id/vs_bl_two"
+        android:layout_width="382dp"
+        android:layout_height="246dp"
+        android:layout_marginTop="15dp"
+        android:inflatedId="@id/cl_newboard_fragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    
+    <ViewStub
+        android:id="@+id/vs_bl_three"
+        android:layout_width="382dp"
+        android:layout_height="246dp"
+        android:layout_marginTop="15dp"
+        android:inflatedId="@id/cl_newboard_fragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     
     <include
-        android:id="@+id/ic_board_layout"
-        layout="@layout/ic_board_layout_three"
-        app:layout_constraintBottom_toTopOf="@+id/divider"
+        android:id="@+id/ic_bl_include"
+        layout="@layout/ic_board_layout_one"
+        android:layout_width="382dp"
+        android:layout_height="246dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="14dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
     
@@ -20,24 +56,20 @@
         android:id="@+id/divider"
         android:layout_width="match_parent"
         android:layout_height="20dp"
-        android:layout_marginBottom="296dp"
         android:background="@color/colorPrimary"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ic_board_layout"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintStart_toStartOf="parent" />
     
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="310dp"
         android:layout_gravity="center_horizontal"
         android:background="@color/flatBlack"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider"
-        app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteX="0dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
     
         <!-- Icon Made By: "https://www.flaticon.com/authors/freepik" Type:  "https://www.flaticon.com/"-->
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -48,7 +80,7 @@
             android:layout_marginEnd="20dp"
             android:clickable="true"
             android:focusable="true"
-            app:layout_constraintEnd_toStartOf="@+id/fab_AppImageAct"
+            app:layout_constraintEnd_toStartOf="@+id/fab_AppImagesAct"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_unsplash_symbol" />
     
@@ -69,7 +101,7 @@
         <!-- Icon Made By: https://linearicons.com Creator: https://perxis.com License:  CC BY-SA 4.0-->
     
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/fab_AppImageAct"
+            android:id="@+id/fab_AppImagesAct"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -116,11 +148,10 @@
             android:clickable="true"
             android:focusable="true"
             app:layout_constraintStart_toEndOf="@+id/fab_LayoutAct"
-            app:layout_constraintTop_toBottomOf="@+id/fab_AppImageAct"
+            app:layout_constraintTop_toBottomOf="@+id/fab_AppImagesAct"
             app:srcCompat="@drawable/ic_letter_t_svgrepo_com" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-    
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

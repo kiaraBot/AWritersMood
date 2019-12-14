@@ -25,6 +25,13 @@
     <string name="tv_swatch">Swatches</string>
     <string name="tv_image">Image</string>
     <string name="tv_text">Text</string>
-    
+    <string name="ib_bl_one">ib_bl_one</string>
+    <string name="ib_bl_two">ib_bl_two</string>
+    <string name="ib_bl_three">ib_bl_three</string>
+    <string name="tv_bl_act_directions">Select a layout by clicking an image</string>
+    <string name="tv_bl_one">Layout 1</string>
+    <string name="tv_bl_two">Layout 2</string>
+    <string name="tv_bl_three">Layout 3</string>
+
 
 </resources>
