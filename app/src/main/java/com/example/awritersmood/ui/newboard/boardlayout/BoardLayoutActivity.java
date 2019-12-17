@@ -21,6 +21,8 @@ public class BoardLayoutActivity extends AppCompatActivity {
     private String layoutString;
     private static String LAYOUT_CODE = "LAYOUT_CODE";
     
+    //TODO: Include & ViewStub
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

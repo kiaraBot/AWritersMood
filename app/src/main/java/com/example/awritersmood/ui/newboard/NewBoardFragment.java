@@ -18,6 +18,7 @@ import android.view.ViewStub;
 
 import com.example.awritersmood.R;
 import com.example.awritersmood.ui.newboard.boardlayout.BoardLayoutActivity;
+import com.example.awritersmood.ui.newboard.boardtheme.ThemeActivity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import static android.app.Activity.RESULT_OK;
@@ -61,7 +62,8 @@ public class NewBoardFragment extends Fragment {
                              Bundle savedInstanceState) {
         newBoardViewModel = ViewModelProviders.of(this).get(NewBoardViewModel.class);
         root = inflater.inflate(R.layout.fragment_newboard, container, false);
-    
+        
+        //TODO: Include & ViewStub
         ic_bl_include = root.findViewById(R.id.ic_bl_include);
         
         fab_LayoutAct = root.findViewById(R.id.fab_LayoutAct);
@@ -86,14 +88,17 @@ public class NewBoardFragment extends Fragment {
         public void onClick(View view) {
             Intent boardLayoutActIntent = new Intent(getActivity(), BoardLayoutActivity.class);
             startActivityForResult(boardLayoutActIntent, LAYOUT_ACT_REQUEST);
-            ic_bl_include.setVisibility(View.GONE);
+            
+            //TODO: Include & ViewStub
         }
     };
     
     private View.OnClickListener fab_ThemeActListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-
+            Intent themeActIntent = new Intent(getActivity(), ThemeActivity.class);
+            startActivityForResult(themeActIntent, THEME_ACT_REQUEST);
+            
         }
     };
     
@@ -128,7 +133,8 @@ public class NewBoardFragment extends Fragment {
     @Override
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        
+        //TODO: Include & ViewStub
+        //  If user clicks a layout for the second time, the app does not shut down. The user can pick each layout once, but they cannot got back to a previous layout.
         if(requestCode == LAYOUT_ACT_REQUEST && resultCode == RESULT_OK){
             layoutChoice = data.getStringExtra(LAYOUT_CODE);
             switch (layoutChoice){
