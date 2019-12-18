@@ -1,11 +1,8 @@
 package com.example.awritersmood.ui.newboard;
 
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.ViewModelProviders;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
@@ -13,12 +10,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.ViewParent;
 import android.view.ViewStub;
 
 import com.example.awritersmood.R;
-import com.example.awritersmood.ui.newboard.boardlayout.BoardLayoutActivity;
-import com.example.awritersmood.ui.newboard.boardtheme.ThemeActivity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import static android.app.Activity.RESULT_OK;
@@ -39,7 +33,6 @@ public class NewBoardFragment extends Fragment {
     View root;
     ViewStub vs_board_layout;
     
-    private NewBoardViewModel newBoardViewModel;
     
     private static int LAYOUT_ACT_REQUEST = 1;
     private static int THEME_ACT_REQUEST = 2;
@@ -60,7 +53,6 @@ public class NewBoardFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        newBoardViewModel = ViewModelProviders.of(this).get(NewBoardViewModel.class);
         root = inflater.inflate(R.layout.fragment_newboard, container, false);
         
         //TODO: Include & ViewStub

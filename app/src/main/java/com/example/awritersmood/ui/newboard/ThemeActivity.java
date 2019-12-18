@@ -1,4 +1,4 @@
-package com.example.awritersmood.ui.newboard.boardtheme;
+package com.example.awritersmood.ui.newboard;
 
 import androidx.appcompat.app.AppCompatActivity;
 

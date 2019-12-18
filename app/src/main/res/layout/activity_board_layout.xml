@@ -7,7 +7,7 @@
     android:layout_gravity="center_horizontal"
     android:background="@color/appBackground"
     android:orientation="vertical"
-    tools:context=".ui.newboard.boardlayout.BoardLayoutActivity">
+    tools:context=".ui.newboard.BoardLayoutActivity">
     
     <Space
         android:layout_width="match_parent"

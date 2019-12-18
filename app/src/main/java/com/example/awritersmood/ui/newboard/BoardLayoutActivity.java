@@ -1,4 +1,4 @@
-package com.example.awritersmood.ui.newboard.boardlayout;
+package com.example.awritersmood.ui.newboard;
 
 import androidx.appcompat.app.AppCompatActivity;
 
