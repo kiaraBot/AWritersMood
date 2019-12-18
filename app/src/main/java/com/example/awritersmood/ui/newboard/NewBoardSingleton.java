@@ -2,7 +2,6 @@ package com.example.awritersmood.ui.newboard;
 
 import android.content.res.XmlResourceParser;
 import android.media.Image;
-import android.provider.ContactsContract;
 
 import java.util.ArrayList;
 
@@ -16,7 +15,8 @@ public class NewBoardSingleton {
         return (INSTANCE);
     }
     //TODO: Not sure how to set up the layout, a ResourceParser? This is crazy new to me and I don't know what type to use.
-    
+
+    private ArrayList<Board> boards;
     
     //Layout
     
@@ -40,13 +40,30 @@ public class NewBoardSingleton {
     
     
     private NewBoardSingleton(){
+
+        boards = new ArrayList<>();
+
         boardTextStrings = new ArrayList<>();
         appGalleryImages = new ArrayList<>();
         deviceGalleryImages = new ArrayList<>();
         unsplashImages = new ArrayList<>();
         savedUserBoards = new ArrayList<>();
     }
-    
+
+    public int addBoard(Board newBoard) {
+        int curIndex = boards.size();
+        boards.add(newBoard);
+        return curIndex;
+    } // int addBoard()
+
+    public Board getBoard(int index)
+    {
+        Board board = null;
+        if (boards.size() > index) {
+            board = boards.get(index);
+        }
+        return board;
+    } // Board getBoard()
     //----- //----- Getters -----// -----//
     public ArrayList<String>getBoardTextStrings(){return this.boardTextStrings;}
     
