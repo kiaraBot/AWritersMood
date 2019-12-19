@@ -4,9 +4,99 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:layout_gravity="center_horizontal"
-    
+    android:background="@color/appBackground"
+    android:orientation="vertical"
+    android:padding="10dp"
     tools:context=".ui.newboard.ThemeActivity">
+    
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+    
+    <TextView
+        android:id="@+id/tv_ta_directions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/tv_ta_directions"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp" />
+    
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:padding="6dp">
+    
+        <ImageButton
+            android:id="@+id/ib_ta_theme1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:background="@color/flatBlack"
+            android:contentDescription="@string/cd_theme1"
+            app:srcCompat="@drawable/theme1" />
+    
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="match_parent" />
+    
+        <ImageButton
+            android:id="@+id/ib_ta_theme2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:background="@color/flatBlack"
+            android:contentDescription="@string/cd_theme2"
+            app:srcCompat="@drawable/theme2" />
+    </LinearLayout>
+    
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:padding="6dp">
+    
+        <ImageButton
+            android:id="@+id/ib_ta_theme3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:background="@color/flatBlack"
+            android:contentDescription="@string/cd_theme3"
+            app:srcCompat="@drawable/theme3" />
+    
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="match_parent" />
+    
+        <ImageButton
+            android:id="@+id/ib_ta_theme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/flatBlack"
+            android:contentDescription="@string/cd_theme3"
+            android:padding="3dp"
+            app:srcCompat="@drawable/theme3" />
 
+
+    </LinearLayout>
+    
+    
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
 </LinearLayout>

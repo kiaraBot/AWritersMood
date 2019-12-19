@@ -1,14 +1,14 @@
 <resources>
     <string name="app_name">A Writer\'s Mood</string>
     
-    <!-- ***** Navigation Drawer ***** -->
+    <!--// ***** // ***** Navigation Drawer ***** // ***** //-->
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">A Writer\'s Mood</string>
     <string name="nav_header_subtitle">afieldprof@gmail.com</string>
     <string name="nav_header_desc">Navigation header</string>
     
-    <!-- *Menu Item Titles-->
+    <!-- ***** Menu Item Titles-->
     <string name="menu_home">Home</string>
     <string name="menu_newboard">Create New Board</string>
     <string name="menu_gallery">Gallery</string>
@@ -17,10 +17,20 @@
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
     
-    <!-- ***** 3 Dot Pop Up-->
+    <!--// ***** // ***** 3 Dot Pop Up ***** // ***** //-->
     <string name="action_settings">Settings</string>
     
-    <!-- ***** Mood Board Layouts *****-->
+    <!--// ***** // ***** NewBoard Activities ***** // ***** //-->
+    <!-- ***** Activity Labels-->
+    <string name="lbl_unsplashAct">Unsplash Activity</string>
+    <string name="lbl_cameraAct">Camera Activity</string>
+    <string name="lbl_appImagesAct">App Images Activity</string>
+    <string name="lbl_textAct">Text Activity</string>
+    <string name="lbl_themeAct">Theme Activity</string>
+    <string name="lbl_layoutActivity">Layout Activity</string>
+    
+    
+    <!-- ***** Layout Activity-->
     <string name="tv_title">Title</string>
     <string name="tv_swatch">Swatches</string>
     <string name="tv_image">Image</string>
@@ -28,10 +38,17 @@
     <string name="ib_bl_one">ib_bl_one</string>
     <string name="ib_bl_two">ib_bl_two</string>
     <string name="ib_bl_three">ib_bl_three</string>
-    <string name="tv_bl_act_directions">Select a layout by clicking an image</string>
+    <string name="tv_bl_act_directions">Click a layout to select it</string>
     <string name="tv_bl_one">Layout 1</string>
     <string name="tv_bl_two">Layout 2</string>
     <string name="tv_bl_three">Layout 3</string>
-
+    
+    <!-- ***** Theme Activity-->
+    <string name="tv_ta_directions">Click a theme swatch to select it</string>
+    <string name="cd_theme1">Theme 1</string>
+    <string name="cd_theme2">Theme 2</string>
+    <string name="cd_theme3">Theme 3</string>
+    
+    
 
 </resources>

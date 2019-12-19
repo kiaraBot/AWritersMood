@@ -2,6 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.awritersmood">
     
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    
+    <uses-feature android:name="android.hardware.camera2"
+        android:required="true"/>
+    
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,8 +17,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.newboard.ThemeActivity"></activity>
-        <activity android:name=".ui.newboard.BoardLayoutActivity" />
+        <activity android:name=".ui.newboard.UnsplashImagesActivity"
+            android:label="@string/lbl_unsplashAct"/>
+        <activity android:name=".ui.newboard.CameraActivity"
+            android:label="@string/lbl_cameraAct"/>
+        <activity android:name=".ui.newboard.AppImagesActivity"
+            android:label="@string/lbl_appImagesAct"/>
+        <activity android:name=".ui.newboard.TextActivity"
+            android:label="@string/lbl_textAct"/>
+        <activity android:name=".ui.newboard.ThemeActivity"
+            android:label="@string/lbl_themeAct"/>
+        <activity android:name=".ui.newboard.LayoutActivity"
+            android:label="@string/lbl_layoutActivity"/>
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"

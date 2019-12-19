@@ -2,8 +2,6 @@ package com.example.awritersmood.ui.newboard;
 
 import android.content.res.XmlResourceParser;
 import android.media.Image;
-import android.provider.ContactsContract;
-
 import java.util.ArrayList;
 
 public class NewBoardSingleton {
@@ -21,6 +19,7 @@ public class NewBoardSingleton {
     //Layout
     
     //Theme
+    private String themeChoice;
     
     //Text
     private ArrayList<String> boardTextStrings;
@@ -40,6 +39,7 @@ public class NewBoardSingleton {
     
     
     private NewBoardSingleton(){
+        themeChoice = "";
         boardTextStrings = new ArrayList<>();
         appGalleryImages = new ArrayList<>();
         deviceGalleryImages = new ArrayList<>();
@@ -48,6 +48,8 @@ public class NewBoardSingleton {
     }
     
     //----- //----- Getters -----// -----//
+    public String getThemeChoice(){return this.themeChoice;}
+    
     public ArrayList<String>getBoardTextStrings(){return this.boardTextStrings;}
     
     public ArrayList<Image>getAppGalleryImages(){return this.appGalleryImages;}
@@ -60,6 +62,10 @@ public class NewBoardSingleton {
     
     
     //----- //----- Setters -----// -----//
+   public void setThemeChoice(String theme){
+        themeChoice = theme;
+   }
+    
     public void addToBoardTextStrings(String value){
         boardTextStrings.add(value);
     }

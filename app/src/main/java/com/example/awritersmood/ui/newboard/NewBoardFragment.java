@@ -1,7 +1,6 @@
 package com.example.awritersmood.ui.newboard;
 
 import androidx.annotation.Nullable;
-import androidx.lifecycle.ViewModelProviders;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -78,7 +77,7 @@ public class NewBoardFragment extends Fragment {
     private View.OnClickListener fab_LayoutActListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Intent boardLayoutActIntent = new Intent(getActivity(), BoardLayoutActivity.class);
+            Intent boardLayoutActIntent = new Intent(getActivity(), LayoutActivity.class);
             startActivityForResult(boardLayoutActIntent, LAYOUT_ACT_REQUEST);
             
             //TODO: Include & ViewStub
@@ -89,7 +88,7 @@ public class NewBoardFragment extends Fragment {
         @Override
         public void onClick(View view) {
             Intent themeActIntent = new Intent(getActivity(), ThemeActivity.class);
-            startActivityForResult(themeActIntent, THEME_ACT_REQUEST);
+            startActivity(themeActIntent);
             
         }
     };
@@ -97,30 +96,35 @@ public class NewBoardFragment extends Fragment {
     private View.OnClickListener fab_TextActListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-        
+            Intent textActIntent = new Intent(getActivity(), TextActivity.class);
+            startActivityForResult(textActIntent, TEXT_ACT_REQUEST);
         }
     };
     
     private View.OnClickListener fab_AppImagesActListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-        
-        }
-    };
-    
-    private View.OnClickListener fab_CameraActListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-        
+            Intent appImagesActIntent = new Intent(getActivity(), AppImagesActivity.class);
+            startActivityForResult(appImagesActIntent, APP_IMAGES_ACT_REQUEST);
         }
     };
     
     private View.OnClickListener fab_UnsplashActListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-        
+            Intent unsplashActIntent = new Intent(getActivity(), UnsplashImagesActivity.class);
+            startActivityForResult(unsplashActIntent, UNSPLASH_ACT_REQUEST);
         }
     };
+    
+    private View.OnClickListener fab_CameraActListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            Intent cameraActIntent = new Intent(getActivity(), CameraActivity.class);
+            startActivityForResult(cameraActIntent, CAMERA_ACT_REQUEST);
+        }
+    };
+    
     
     @Override
     public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
@@ -148,7 +152,26 @@ public class NewBoardFragment extends Fragment {
                 default:
                     break;
             }
-            
+        }
+        
+        if(requestCode == THEME_ACT_REQUEST && requestCode == RESULT_OK){
+        
+        }
+        
+        if(requestCode == TEXT_ACT_REQUEST && requestCode == RESULT_OK){
+        
+        }
+        
+        if(requestCode == APP_IMAGES_ACT_REQUEST && requestCode == RESULT_OK){
+        
+        }
+    
+        if (requestCode == UNSPLASH_ACT_REQUEST && requestCode == RESULT_OK) {
+        
+        }
+    
+        if (requestCode == CAMERA_ACT_REQUEST && requestCode == RESULT_OK) {
+        
         }
     }
 }

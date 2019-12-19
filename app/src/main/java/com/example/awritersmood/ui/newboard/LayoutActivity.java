@@ -12,7 +12,7 @@ import android.widget.ImageButton;
 
 import com.example.awritersmood.R;
 
-public class BoardLayoutActivity extends AppCompatActivity {
+public class LayoutActivity extends AppCompatActivity {
     private ImageButton ib_bl_one;
     private ImageButton ib_bl_two;
     private ImageButton ib_bl_three;
